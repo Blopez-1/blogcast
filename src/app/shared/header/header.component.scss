@@ -1,0 +1,33 @@
+.navbar {
+  background-color: transparent;
+  height: 80px;
+}
+
+.button-subscribe {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.button-subscribe svg {
+  fill: #FFA417;
+  transition: fill 0.3s ease;
+}
+
+.button-subscribe:hover {
+  color: #FFA417;
+}
+
+.button-subscribe:hover svg {
+  fill: #FFA417;
+}
+
+

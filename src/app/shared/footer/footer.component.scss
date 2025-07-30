@@ -1,0 +1,88 @@
+.footer {
+  //background-color: #a93535;
+  color: #fff;
+  font-size: 0.9rem;
+  padding: 2rem 0rem;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  height: 35px;
+}
+
+.scroll-top-btn {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.scroll-top-btn:hover {
+  background-color: #FFA417;
+  color: #000;
+}
+
+.footer-divider {
+  border: none;
+  border-top: 1px solid #333;
+  margin: 1rem 0;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: flex-start;
+  padding: 1rem 0;
+}
+
+.footer-column {
+  min-width: 160px;
+}
+
+.footer-column h4 {
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+.footer-column a:hover {
+  color: #FFA417;
+}
+
+.footer-extra {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: #888;
+}
+
+.footer-legal a {
+  margin-left: 1rem;
+  color: #888;
+  text-decoration: none;
+}
+
+.footer-legal a:hover {
+  color: #FFA417;
+}

@@ -1,0 +1,25 @@
+<div class="blog-container container">
+    <div class="row">
+        <div class="col-lg-12 d-flex">
+            <!-- Card principal -->
+            <div class="flex-grow-1">
+                <app-card [post]="mainPost" variant="featured"></app-card>
+            </div>
+
+            <!-- Línea separadora tipo neón -->
+            <div class="neon-divider-vertical"></div>
+
+            <!-- Cards secundarias -->
+            <div class="d-flex flex-column justify-content-start gap-3" style="max-width: 350px;">
+                <ng-container *ngFor="let post of secondaryPosts">
+                    <app-card [post]="post" variant="compact"></app-card>
+                </ng-container>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SECCIÓN: Lo último -->
+    <app-latest-posts *ngIf="showLatest" [posts]="latestPosts"></app-latest-posts>
+
+</div>
