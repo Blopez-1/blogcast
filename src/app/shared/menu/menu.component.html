@@ -10,10 +10,10 @@
 
     <!-- Menú horizontal -->
     <ul class="main-menu d-flex gap-5 mb-0">
-      <li><a href="#" class="menu-link">Emprendimiento</a></li>
-      <li><a href="#" class="menu-link">Salud</a></li>
-      <li><a href="#" class="menu-link">Hábitos</a></li>
-      <li><a href="#" class="menu-link">Desarrollo Personal</a></li>
+      <li><a routerLink="/category" [queryParams]="{ topic: 'entrepreneurship' }" class="menu-link">Emprendimiento</a></li>
+      <li><a routerLink="/category" [queryParams]="{ topic: 'health' }" class="menu-link">Salud</a></li>
+      <li><a routerLink="/category" [queryParams]="{ topic: 'habits' }" class="menu-link">Hábitos</a></li>
+      <li><a routerLink="/category" [queryParams]="{ topic: 'personal-growth' }" class="menu-link">Desarrollo Personal</a></li>
     </ul>
   </div>
 </div>

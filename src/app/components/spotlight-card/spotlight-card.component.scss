@@ -1,0 +1,31 @@
+.spotlight {
+  background-color: #151515;
+  color: #fff;
+}
+
+.spotlight-text {
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: left;
+  line-height: 1.4;
+  color: #fff; // para el texto blanco por defecto
+}
+
+.highlight-green {
+  color: #FFA417;
+}
+
+.spotlight-button {
+  background: linear-gradient(90deg, #FFA417, #FF4500);
+  color: #ffffff;
+  border: none;
+  padding: 0.75rem 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.spotlight-button:hover {
+  background: linear-gradient(90deg, #FF7F50, #FF6347);
+}

@@ -1,54 +1,92 @@
-.article-card {
-  //background-color: #000;
-  color: #fff;
-  cursor: pointer;
-  margin-bottom: 2rem;
-  transition: transform 0.3s ease;
+.latest-wrapper {
+    width: 70%;
+    border: 1px solid #FFA417;
+    box-shadow: 0 0 5px #FFA417, 0 0 10px #FFA417;
+    // background-color: #000;
+    border-radius: 4px;
+    padding: 1rem 1.5rem;
+    margin-top: 1rem;
+}
 
-  img {
-    width:100%;
-    transition: transform 0.3s ease;
-  }
+.latest-divider {
+    height: 1px;
+    background-color: #444;
+    opacity: 0.5;
+    margin: 1rem 0;
+}
 
-  &:hover img {
-    transform: scale(1.01);
-  }
+.latest-card {
+    background: transparent;
+    padding: 1rem 0; // menos espacio interno
+}
 
-  .article-meta {
-    font-size: 0.8rem;
-    color: #999;
-    margin-top: 0.5rem;
-    text-transform: uppercase;
-  }
-
-  h2 {
+.section-title {
+    font-size: 2.2rem;
     font-weight: bold;
-    margin: 1rem 0 0.5rem;
-    color: #fff;
-  }
+    margin-bottom: 1rem;
+}
 
-  p {
+
+.latest-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.latest-category {
+    color: #FFA417;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+}
+
+.latest-excerpt {
     color: #ccc;
     font-size: 0.95rem;
-  }
+}
 
-  &.featured {
-/*     img {
-      border: 2px solid #00BFFF;
-    } */
+.latest-meta {
+    font-size: 0.8rem;
+    color: #999;
+    margin-top: 1rem;
+    text-transform: uppercase;
+}
 
-    h2 {
-      font-size: 1.4rem;
-    }
-  }
+.btn-more {
+    margin-top: 1rem;
+    background: none;
+    border: 1px solid #FFA417;
+    color: #FFA417;
+    padding: 0.4rem 1rem;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 4px;
 
-  &.compact {
-/*     img {
-      border: 1px solid #FFA417;
-    } */
+}
 
-    h2 {
-      font-size: 1.3rem;
-    }
-  }
+.btn-more:hover {
+    background-color: #FFA417;
+    color: #000;
+
+}
+
+.latest-image img {
+    width: 240px;
+    height: auto;
+    object-fit: cover;
+    border-left: 2px solid #FFA417;
+        border-radius: 4px;
+
+}
+
+.custom-banner {
+  background-color: #111;
+  color: #FFA417;
+  border: 1px solid #FFA417;
+  box-shadow: 0 0 10px #FFA417;
+  border-radius: 8px;
+  font-weight: bold;
 }

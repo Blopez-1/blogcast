@@ -9,5 +9,5 @@ import { Component, Input } from '@angular/core';
 })
 export class CardComponent {
   @Input() post: any;
-  @Input() variant: 'featured' | 'compact' = 'featured';
+  @Input() last: boolean = false;
 }

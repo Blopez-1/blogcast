@@ -1,12 +1,18 @@
-.general-wrapper {
+.root-wrapper {
   background-color: #0C0C0C !important;
   min-height: 100vh;
   color: #fff;
 }
 
-.p1-wrapper {
+/* .navbar-wrapper {
+  padding-bottom: 2em;
+} */
+
+
+.content-wrapper {
   padding-bottom: 4em;
 }
+
 
 .neon-divider {
   height: 2px;
@@ -18,6 +24,6 @@
   opacity: 0.9;
 }
 
-.p2-wrapper {
+.footer-wrapper {
   background-color: #151515;
 }

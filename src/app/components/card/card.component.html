@@ -1,11 +1,14 @@
-<div class="article-card" [ngClass]="variant">
-    <img [src]="post.image" alt="Imagen del artículo">
-
-    <div class="article-meta">
-        {{ post.date }} • {{ post.readTime }} • {{ post.author }}
-    </div>
-
-    <h2>{{ post.title }}</h2>
-
-    <p *ngIf="variant === 'featured'">{{ post.excerpt }}</p>
+<div class="latest-card d-flex flex-column flex-md-row align-items-stretch p-4">
+  <div class="latest-content flex-grow-1 pe-md-4">
+    <h3 class="latest-title">{{ post.title }}</h3>
+    <div class="latest-category">EMPRENDIMIENTO Y SALUD</div>
+    <p class="latest-excerpt">{{ post.excerpt }}</p>
+    <button class="btn-more">➜ SABER MÁS</button>
+    <div class="latest-meta">{{ post.author }} • {{ post.date }}</div>
+  </div>
+  <div class="latest-image mt-3 mt-md-0">
+    <img [src]="post.image" alt="Imagen artículo" />
+  </div>
 </div>
+
+<div *ngIf="!last" class="latest-divider"></div>

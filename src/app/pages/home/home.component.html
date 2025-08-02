@@ -1,25 +1,40 @@
-<div class="blog-container container">
+<div class="container">
     <div class="row">
         <div class="col-lg-12 d-flex">
-            <!-- Card principal -->
             <div class="flex-grow-1">
-                <app-card [post]="mainPost" variant="featured"></app-card>
+                <!--RECUADRO PRINCIPAL-->
+                <app-main-card [post]="mainPost" variant="featured"></app-main-card>
             </div>
 
-            <!-- Línea separadora tipo neón -->
             <div class="neon-divider-vertical"></div>
-
-            <!-- Cards secundarias -->
+            <!--RECUADROS LATERALES-->
             <div class="d-flex flex-column justify-content-start gap-3" style="max-width: 350px;">
                 <ng-container *ngFor="let post of secondaryPosts">
-                    <app-card [post]="post" variant="compact"></app-card>
+                    <app-main-card [post]="post" variant="compact"></app-main-card>
                 </ng-container>
 
             </div>
         </div>
     </div>
 
-    <!-- SECCIÓN: Lo último -->
-    <app-latest-posts *ngIf="showLatest" [posts]="latestPosts"></app-latest-posts>
+    <h2 class="section-title">LO ÚLTIMO...</h2>
+
+    <div class="latest-wrapper mb-4">
+        <ng-container *ngFor="let post of posts.slice(0, 3); let i = index">
+            <app-card [post]="post" [last]="i === 2"></app-card>
+        </ng-container>
+    </div>
+
+</div>
+
+<app-spotlight-card class="my-5 d-block mx-auto"></app-spotlight-card>
+
+<div class="container">
+
+    <div class="latest-wrapper">
+        <ng-container *ngFor="let post of posts.slice(3); let i = index">
+            <app-card [post]="post" [last]="i === posts.slice(3).length - 1"></app-card>
+        </ng-container>
+    </div>
 
 </div>
